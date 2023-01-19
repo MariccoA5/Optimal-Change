@@ -6,7 +6,7 @@ def optimal_change(cost, paid):
     return f'The optimal change for an item that costs ${cost} with an amount paid of ${paid} is no change given.'
   
   if paid < cost: #If paid less than cost
-    return 'Not enough money for the item.'
+    return 'Not enough money for this item.'
   
   change = paid - cost 
   
@@ -14,41 +14,41 @@ def optimal_change(cost, paid):
     '100': 0, '50': 0, '20': 0, '10': 0, '5': 0, '1': 0, 'quarter': 0, 'dime': 0, 'nickel': 0, 'penny': 0
          }
   
-  def helper(key, value, change):
+  def change_update(key, value, change):
     bills[key] += 1
     change = round(change - value, 2)
     return change
       
   while (change > 0): # update bills dict to match the change
     if change > 100:
-      change = helper('100', 100.00, change)
+      change = change_update('100', 100.00, change)
       continue
     if change >=  50:
-      change = helper('50', 50.00, change)
+      change = change_update('50', 50.00, change)
       continue
     if change >=  20:
-      change = helper('20', 20.00, change)
+      change = change_update('20', 20.00, change)
       continue
     if change >=  10:
-      change = helper('10', 10.00, change)
+      change = change_update('10', 10.00, change)
       continue
     if change >=  5:
-      change = helper('5', 5.00, change)
+      change = change_update('5', 5.00, change)
       continue
     if change >=  1:
-      change = helper('1', 1.00, change)
+      change = change_update('1', 1.00, change)
       continue
     if change >=  .25:
-      change = helper('quarter', 0.25, change)
+      change = change_update('quarter', 0.25, change)
       continue
     if change >=  .1:
-      change = helper('dime', 0.10, change)
+      change = change_update('dime', 0.10, change)
       continue
     if change >=  .05:
-      change = helper('nickel', 0.05, change)
+      change = change_update('nickel', 0.05, change)
       continue
     if change >  0:
-      change = helper('penny', 0.01, change)
+      change = change_update('penny', 0.01, change)
       continue
    
   return optimal_bills(bills, cost, paid)
