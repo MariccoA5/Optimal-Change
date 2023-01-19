@@ -1,19 +1,8 @@
 # Assessment 1: Algorithms
 - **Change Maker**
 
-## Important Grading Information
-- Make sure you read the [Assessment-1 Grading Rubric](https://docs.google.com/spreadsheets/d/1CjVoEPvswccsGTU5xc0WLaQ87Ql_mqGSeCEoZhSFyCM/edit?usp=sharing).
-  - Algorithm Correctness (60%)
-  - Code Design (30%)
-  - Testing (10%)
-- You need to get a 75% or better to pass. (You must pass all assessments in order to graduate Code Platoon's program.)
-- If you fail the assessment, you have can retake it once to improve your score. For this assessment... 
-  - *5% penalty*: If you complete and submit the retake **within one week** of receiving your grade. 
-  - *10% penalty*: If you complete and submit the retake **by 8:30am, August 1st, 2022**. A retake for this assessment WILL NOT be accepted after this date.
-
 ## Rules / Process
 - This test is fully open notes and open Google, but is not to be completed with the help of any other student/individual.
-- Do not open a pull request against this repository. We will evaluate your code individually.
 
 ## Requirements
 - This assessment should be completed using Python.
