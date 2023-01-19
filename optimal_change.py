@@ -6,7 +6,7 @@ def optimal_change(cost, paid):
     return f'The optimal change for an item that costs ${cost} with an amount paid of ${paid} is no change given.'
   
   if paid < cost: #If paid less than cost
-    return 'Not enough money for this item.'
+    return 'Not enough money for the item.'
   
   change = paid - cost 
   

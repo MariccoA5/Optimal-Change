@@ -13,6 +13,6 @@ print("5:", optimal_change(100, 100) == "The optimal change for an item that cos
 
 print("6:", optimal_change(29.41, 34.76) == "The optimal change for an item that costs $29.41 with an amount paid of $34.76 is 1 $5 bill, 1 quarter, and 1 dime.")
 
-print("7:", optimal_change(1.98, 1.00) == "Not enough money for this item.")
+print("7:", optimal_change(1.98, 1.00) == "Not enough money for the item.")
 
 print("8:", optimal_change(29.41, 34.76) == "The optimal change for an item that costs $29.41 with an amount paid of $34.76 is 1 $5 bill, 1 quarter, and 1 dime.")
